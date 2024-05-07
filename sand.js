@@ -15,3 +15,5 @@
 
 // console.log(personalMovieDB);
 // //console.log(personalMovieDB.movies[4]);
+
+console.log(isNaN(6))
