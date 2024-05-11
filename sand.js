@@ -1,19 +1,27 @@
-// const personalMovieDB = {
-//     movies: []
-//     };
-    
-// const a = 1
-// const b = 2
-// const c = 'fnjrk'
-// const d = 2
+// const numbers = {
+//     a:2,
+//     b:5,
+//     c:{
+//         x:7,
+//         y:4
+//     }
+// }
+
+// function copy(mainObj){
+//     let objCopy = {}
+
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy
+// }
 
 
-// personalMovieDB.movies[0] = b; //заменяем первый элемент на b
-// personalMovieDB.movies[1] = c; //
-// personalMovieDB.movies[d] = 'i';
+// const newNumbers = copy(numbers);
+// newNumbers.a=10;
+// console.log(newNumbers);
+// console.log(numbers);
 
+// console.log(numbers['1'])
 
-// console.log(personalMovieDB);
-// //console.log(personalMovieDB.movies[4]);
-
-console.log(isNaN(6))
