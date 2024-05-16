@@ -62,16 +62,22 @@ const personalMovieDB = {
     },
     
     writeYourGenres: function() {
-        for (let i = 1; i < 2; i++) {
-            let genre = prompt(`Ваш любимый жанр под номером ${i}`);
+            for(let i=1; i<=3; i++){
+                let genre=prompt(`Ваш любимый жанр под номером ${i}`);
+                if (genre === '' || genre == null){
+                    console.log('вы не ввели информацию');
+                    i--;
+                } else {
+                    personalMovieDB.genres[i-1]=genre;     
+                }
+                personalMovieDB.genres.forEach((item, i) => {
+                    console.log(`Любимый жанр ${i + 1} - это ${item}`);
+        });
+}
+}
 
-            if (genre === '' || genre == null) {
-                console.log('Вы ввели некорректные данные или не ввели их вовсе');
-                i--;
-            } else {
-                personalMovieDB.genres[i - 1] = genre;
-            } 
-}
-}
-}
 
+// 3) В методе writeYourGenres запретить пользователю нажать кнопку "отмена" или оставлять пустую строку. 
+// Если он это сделал - возвращать его к этому же вопросу. После того, как все жанры введены - 
+// при помощи метода forEach вывести в консоль сообщения в таком виде:
+// "Любимый жанр #(номер по порядку, начиная с 1) - это (название из массива)"*/
